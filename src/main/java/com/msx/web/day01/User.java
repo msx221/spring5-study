@@ -6,8 +6,8 @@ package com.msx.web.day01;
  * @Description:com.msx.web.day01
  * @Version:1.0
  */
-public class StudyDay01 {
-    public static void main(String[] args) {
-        System.out.println("Hello");
+public class User {
+    public void add(){
+        System.out.println("add");
     }
 }
