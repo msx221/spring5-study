@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--无参数构造函数赋值-->
+    <!--<bean id="user" class="com.msx.web.day04.pojo.User">
+        <property name="userName" value="你好！"/>
+    </bean>-->
+    <!--有参构造函数赋值-->
+    <!--1、通过下标赋值-->
+    <!--<bean id="user" class="com.msx.web.day04.pojo.User">
+        <constructor-arg index="0" value="马仕鑫" />
+    </bean>-->
+    <!--2、通过参数类型创建，不推荐，如果存在多个相同类型的参数时就不行-->
+    <!--<bean id="user" class="com.msx.web.day04.pojo.User">
+        <constructor-arg type="java.lang.String" value="123" />
+    </bean>-->
+    <!--3、直接通过参数名赋值-->
+    <bean id="user" class="com.msx.web.day04.pojo.User" >
+        <constructor-arg name="userName" value="马仕鑫" />
+        <constructor-arg name="sex" value="男" />
+    </bean>
+    <bean id="userT" class="com.msx.web.day04.pojo.UserT">
+
+    </bean>
+</beans>
